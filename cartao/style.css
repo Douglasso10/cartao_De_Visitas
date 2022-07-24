@@ -1,0 +1,25 @@
+.corDeFundo{
+    background-color: hsl(233, 47%, 7%);
+}
+
+.conteiner{
+    color: white;
+    background-color: hsl(244, 38%, 16%);
+    font-size: 15px;    
+    width: 60%;
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 15px;
+}
+
+.txt{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.imagem{
+    width: 50%;
+    
+}
