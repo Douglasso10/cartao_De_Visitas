@@ -1,25 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Lexend+Deca:wght@100;200 & display=swap');
+
 .corDeFundo{
     background-color: hsl(233, 47%, 7%);
 }
 
+
 .conteiner{
     color: white;
     background-color: hsl(244, 38%, 16%);
-    font-size: 15px;    
-    width: 60%;
+    width: 80%;
+    height: auto;
+    flex-direction: row;
     display: flex;
-    margin: auto;
-    margin-top: 200px;
     border-radius: 15px;
+    margin: auto;
+    margin-top: 10%;
 }
 
-.txt{
+.titulo{
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    font-size: 30px;
+    margin: 50px;
+    font-weight: bolder;
+}
+
+.cor{
+    color: #864086;
+}
+
+.p_style{
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    margin: 50px;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.lista_style{
+    font-family: 'Inter', sans-serif;
+    display: flex; 
+    padding-top: 70px;
+    margin-left: 50px;
+}
+
+.list{
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 100px;
+}
+
+.lista_style_2{
+    font-family: 'Inter', sans-serif;
     display: flex;
-    flex-direction: column;
-    
+}
+
+.list_2{
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-left: 50px;
+    padding-right: 40px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 5px;
 }
 
 .imagem{
     width: 50%;
-    
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+    /*filter: brightness(0.5) sepia(1) saturate(5) hue-rotate(272)*/ 
 }
+
+@media screen and (max-width:600px){
+    .conteiner{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: auto;
+    }
+
+    .titulo{
+        margin: 40px 45px 0 45px;
+    }
+
+    .p_style{
+        font-size: 15px;
+        margin: 25px 45px 0 45px;
+    }
+
+    .lista_style{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .list{
+        padding: 10px 40px 50px 0px;
+
+    }
+
+    .lista_style_2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list_2{
+        padding: 10px 40px 20px 0px;
+    }
+
+    .imagem{
+        width: 100%;
+    }
+} 
